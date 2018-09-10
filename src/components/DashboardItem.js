@@ -1,12 +1,18 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
 import { Card, Button } from 'react-native-elements';
 
 export default class DashboardItem extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Card containerStyle={{ padding: 0, margin: 12 }}>
+       <TouchableWithoutFeedback
+          onPress={() =>
+            this.props.navigation.navigate('Products', {
+              title: this.props.title,
+            })
+          }>
+        <Card containerStyle={{ padding: 0, margin: 6 }}>
           <View
             style={{
               padding: 15,
@@ -32,11 +38,11 @@ export default class DashboardItem extends React.Component {
                   Under ₹ 40000
                 </Text>
               </View>
-              <TouchableOpacity
+              <View
                 style={styles.SubmitButtonStyle}
                 activeOpacity={0.5}>
                 <Text style={styles.TextStyle}> View all </Text>
-              </TouchableOpacity>
+              </View>
             </View>
           </View>
           <View style={{ flexDirection: 'row', height: 300 }}>
@@ -59,13 +65,13 @@ export default class DashboardItem extends React.Component {
               />
               <Text style={{ fontSize: 14 }}>Windows</Text>
               <Text style={{ fontSize: 12, color: 'green' }}>
-                10 % Off  ₹ 20000/-
+                10 % Off ₹ 20000/-
               </Text>
             </View>
-            <View style={{ flexDirection: 'column', width: '40%',}}>
+            <View style={{ flexDirection: 'column', width: '40%' }}>
               <View
                 style={{
-                  height:150,
+                  height: 150,
                   alignItems: 'center',
                   justifyContent: 'center',
                   borderBottomWidth: 0.4,
@@ -81,18 +87,17 @@ export default class DashboardItem extends React.Component {
                 />
                 <Text style={{ fontSize: 14 }}>Mac book pro</Text>
                 <Text style={{ fontSize: 12, color: 'green' }}>
-                  10 % Off  ₹ 200000/-
+                  10 % Off ₹ 200000/-
                 </Text>
               </View>
               <View
                 style={{
-                  height:150,
+                  height: 150,
                   alignItems: 'center',
                   justifyContent: 'center',
-                
                 }}>
                 <Image
-                  style={{ width: '100%', height: "70%" }}
+                  style={{ width: '100%', height: '70%' }}
                   source={{
                     uri:
                       'https://rukminim1.flixcart.com/image/312/312/j76i3rk0/computer/s/p/m/hp-laptop-original-imaexhfa8cgmfe2e.jpeg?q=70',
@@ -101,12 +106,13 @@ export default class DashboardItem extends React.Component {
                 />
                 <Text style={{ fontSize: 14 }}>Windows</Text>
                 <Text style={{ fontSize: 12, color: 'green' }}>
-                  10 % Off  ₹ 20000/-
+                  10 % Off ₹ 20000/-
                 </Text>
               </View>
             </View>
           </View>
         </Card>
+        </TouchableWithoutFeedback>
       </View>
     );
   }
@@ -114,7 +120,7 @@ export default class DashboardItem extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#f5f5f5',
   },
   SubmitButtonStyle: {
     padding: 4,

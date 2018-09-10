@@ -1,53 +1,59 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
 import { Card, Button } from 'react-native-elements';
 
 export default class DashboardItem2 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Card containerStyle={{ padding: 0, marginTop: 10, margin: 0 }}>
-          <View style={{ flexDirection: 'row', height: 200 }}>
-            <View
-              style={{
-                flex: 1,
-              }}>
+        <TouchableWithoutFeedback
+          onPress={() =>
+            this.props.navigation.navigate('Products', {
+              title: this.props.title,
+            })
+          }>
+          <Card containerStyle={{ padding: 0, marginTop: 6, margin: 0 }}>
+            <View style={{ flexDirection: 'row', height: 200 }}>
               <View
                 style={{
-                  height: '70%',
-                  padding:10,
-                  alignItems: 'center',
-                  justifyContent: 'center',
+                  flex: 1,
                 }}>
-                <Image
-                  style={{ width: '100%', height: '100%' }}
-                  source={{
-                    uri:
-                      'https://rukminim1.flixcart.com/image/402/402/jjrgosw0/computer/j/v/j/asus-na-laptop-original-imaf79eyfrytjbgz.jpeg?q=70',
-                  }}
-                  resizeMode="contain"
-                />
-              </View>
-              <View
-                style={{
-                  height: '30%',
-                  marginLeft: 14,
-                  flexDirection: 'column',
-                }}>
-                <Text
+                <View
                   style={{
-                    fontWeight: 'bold',
+                    height: '70%',
+                    padding: 10,
+                    alignItems: 'center',
+                    justifyContent: 'center',
                   }}>
-                  Dell Inspiron 15 7572 Laptop w/ Intel Core - 8GB Memory - 256
-                  GB SSD
-                </Text>
-                <Text style={{ fontSize: 12, color: 'orange' }}>
-                  5% Off  ₹ 120000/-
-                </Text>
+                  <Image
+                    style={{ width: '100%', height: '100%' }}
+                    source={{
+                      uri:
+                        'https://images-na.ssl-images-amazon.com/images/I/51DE4FICRGL.jpg',
+                    }}
+                    resizeMode="contain"
+                  />
+                </View>
+                <View
+                  style={{
+                    height: '30%',
+                    marginLeft: 14,
+                    flexDirection: 'column',
+                  }}>
+                  <Text
+                    style={{
+                      fontWeight: 'bold',
+                    }}>
+                    Nikon D5600 Digital Camera 18-55mm VR Kit (Black)
+                  </Text>
+                  <Text style={{ fontSize: 12, color: 'orange' }}>
+                    22% Off ₹ 43,600/-
+                  </Text>
+                </View>
               </View>
             </View>
-          </View>
-        </Card>
+          </Card>
+        </TouchableWithoutFeedback>
       </View>
     );
   }
@@ -55,6 +61,6 @@ export default class DashboardItem2 extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#f5f5f5',
   },
 });

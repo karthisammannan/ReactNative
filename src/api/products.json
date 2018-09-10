@@ -1,0 +1,101 @@
+{
+    "Laptops": [
+      {
+        "name": "Dell Inspiron 15 7572 Laptop w/ Intel Core - 8GB Memory - 256 GB SSD",
+        "price": 3000,
+        "offer": "30%",
+        "img": "https://rukminim1.flixcart.com/image/502/502/jjrgosw0/computer/j/v/j/asus-na-laptop-original-imaf79eyfrytjbgz.jpeg?q=70",
+        "rating": "4.7",
+        "old_price": "99999",
+        "offered_price": "90000",
+        "feature": "Exchange, no cost EMI available"
+      },
+      {
+        "name": "Macbook pro",
+        "price": 300000,
+        "offer": "5%",
+        "img": "https://rukminim1.flixcart.com/image/532/532/computer/r/x/u/apple-macbook-pro-notebook-original-imaepax8usdzrh5h.jpeg?q=70",
+        "rating": "4.7",
+        "old_price": "99999",
+        "offered_price": "90000",
+        "feature": "Exchange, no cost EMI available"
+      }
+    ],
+    "Mobiles": [
+      {
+        "name": "Apple iPhone X (Silver, White 64GB & 128GB)",
+        "offer": "10% Off",
+        "img": "https://staticshop.o2.co.uk/product/images/iphone-x-space-grey-sku-header.png?cb=25dc5afb0412fc40a28aa29d82cb53d0",
+        "rating": "4.7",
+        "old_price": "59999",
+        "offered_price": "50000",
+        "feature": "Exchange, no cost EMI available"
+      }
+    ],
+    "Cameras": [
+      {
+        "name": "Nikon D5600 Digital Camera 18-55mm VR Kit (Black)",
+        "offer": "22% Off",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51DE4FICRGL.jpg",
+        "rating": "4.0",
+        "old_price": "55,950.00 ",
+        "offered_price": "43,600.00",
+        "feature": "Exchange, EMI starts at ₹ 2,073"
+      }
+    ],
+    "Television": [
+      {
+        "name": "Samsung Series 4 59cm (24 inch) HD Ready LED TV  (24K4100)",
+        "offer": "33% Off",
+        "img": "https://rukminim1.flixcart.com/image/500/500/television/s/y/z/samsung-24k4100-original-imaemk4xbggzcvsh.jpeg?q=70",
+        "rating": "4.2",
+        "old_price": "16,490.00",
+        "offered_price": "10,999.00",
+        "feature": "No cost EMI from ₹1,834/month"
+      }
+    ],
+    "Tablets": [
+       {
+        "name": "Apple iPad (6th Gen) 32 GB 9.7 inch with Wi-Fi Only (Space Grey)",
+        "offer": "3% Off",
+        "img": "https://rukminim1.flixcart.com/image/500/500/jfsknm80/tablet/u/m/z/apple-mr7f2hn-a-original-imaf46kh3wvufeme.jpeg?q=70",
+        "rating": "4.6",
+        "old_price": "28,000.00",
+        "offered_price": "26,900.00",
+        "feature": "No cost EMI from ₹2,989/month. Standard EMI also available"
+      }
+    ],
+    "Storage": [
+       {
+        "name": "Seagate 2 TB Wired External Hard Disk Drive",
+        "offer": "49% Off",
+        "img": "https://rukminim1.flixcart.com/image/500/500/external-hard-drive/g/h/2/seagate-2-tb-back-up-plus-original-imaecm6ffdrwezym.jpeg?q=70",
+        "rating": "4.4",
+        "old_price": "11,660",
+        "offered_price": "5,899",
+        "feature": "No cost EMI from ₹1,967/month"
+      }
+    ],
+    "Audio": [
+     {
+        "name": "JBL T250SI Headphone  (Black, On the Ear)",
+        "offer": "64% Off",
+        "img": "https://rukminim1.flixcart.com/image/500/500/jic0u4w0/headphone/stereo/b/f/7/jbl-t250si-original-imaf65gvuyeqfndf.jpeg?q=70",
+        "rating": "4.1",
+        "old_price": "2,499",
+        "offered_price": "899",
+        "feature": "Exchange, no cost EMI available"
+      }
+    ],
+    "Mouse": [
+      {
+        "name": "Lenovo N100 Wireless Optical Mouse  (USB, Black)",
+        "offer": "8% Off",
+        "img": "https://rukminim1.flixcart.com/image/500/500/mouse/n/e/6/lenovo-n100-original-imadr77rpevehhrv.jpeg?q=70",
+        "rating": "4.4",
+        "old_price": "980",
+        "offered_price": "899",
+        "feature": "Exchange, no cost EMI available"
+      }
+    ]
+  }
